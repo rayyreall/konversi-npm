@@ -35,69 +35,10 @@ Apakah anda ingin mengulang Program lagi (y/n)? n
 
 ![Contoh Tampilan Program](images/tampilan-program.png)
 
-### File: `Main.java`
 
-```java
-import java.util.Scanner;
-```
-- Mengimpor kelas Scanner untuk membaca input dari pengguna.
-<br/>
-
-```java
-public class Main {
-    public static void main(String[] args) {
-...
-    }
-}
-```
-- Mendeklarasikan kelas Main dan method main sebagai titik utama program berjalan (Pusat program ada disini)
-
-```java
- while (true) {
-            try {
-                String npm = Main.readInput("Masukkan NPM anda (ketik q untuk keluar): ");
-                if (Main.isExit(npm)) {
-                    System.out.println("[TERMINATE] Program berakhir!");
-                    break;
-                }
-                MahasiswaEntity mahasiswa = Npm.convert(npm);
-
-                System.out.println("----------------[DATA MAHASISWA]--------------");
-                System.out.println("NPM \t\t: " + mahasiswa.npm);
-                System.out.println("Tahun masuk\t\t: " + mahasiswa.tahun);
-                System.out.println("Kode fakultas\t: " + mahasiswa.kodeFakultas);
-                System.out.println("Kode prodi\t\t: " + mahasiswa.kodeProdi);
-                System.out.println("Nama prodi\t\t: " + mahasiswa.namaProdi);
-                System.out.println("Urutan masuk\t: " + mahasiswa.urutanMasuk);
-                System.out.println("-----------------------------------------------");
-
-                String repeat = readInput("Apakah anda ingin mengulang Program lagi (y/n)? ");
-
-                repeat = repeat.toLowerCase();
-
-                if (!repeat.equals("y")){
-                    System.out.println("[TERMINATE] Program anda telah berakhir");
-                    break;
-                }
-                System.out.println();
-                System.out.println("================================================");
-            } catch (Exception err) {
-                System.out.println("[ERROR] " + err.getMessage());
-                System.out.println();
-            }
-        }
-    }
-```
-
-- Kode ```java while (true) {...} ``` untuk melakukan perulangan terus menerus sampai di berhentikan menggunakan ```java break```
-- Kode ```java try {
-    ...
-} catch (Exception err) {
-    ...
-}``` berfungsi untuk mengecek apakah ada Error atau tidak jika terdapat error maka akan di kirim ke catch. dan jika tidak ada error maka catch tidak akan di eksekusi
-- Kode ```java  String npm = Main.readInput("Masukkan NPM anda (ketik q untuk keluar): ");``` ini berfungsi untuk membaca Inputan, disini saya menggunakan Method static dari readInput
-- Kode ```java if (Main.isExit(npm)) {
-          ....
-  }``` Berfungsi untuk melakukan pengecekan apakah user mengetikkan q / quit pada terminal jika iya akan menghentikan programnya
-  - Kode ```java break;``` digunakan untuk menghentikan perulangan (berkaitan dengan kode ```java if (Main.isExit(npm))``` ) jika quit maka kode break dihentikan
-  - 
+## [NOTE]
+- ```java throw``` (berfungsi mirip seperti return tetapi dia digunakan untuk kesalahan pada program kita)
+- ```java new Exception("Pesan Kesalahannya")``` (Berfungsi untuk mengembalikan kesalahan apa yang dilakukan user agar di tangkap melalui ```java try {...} catch (e Exception) { ... }```
+- ```java text.equals("")``` (Berfungsi untuk mengecek apakah String itu memiliki teks yang sama persis)
+- ```java "\t"``` (Berfungsi membuat jarak seperti fitur tab pada microsoft word)
+- ```java NumberFormatException ``` (Ini adalah salah satu jenis Exception / Error Jika format Number tidak sesuai)
