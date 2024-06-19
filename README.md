@@ -33,6 +33,8 @@ Apakah anda ingin mengulang Program lagi (y/n)? n
 [TERMINATE] Program anda telah berakhir
 ```
 
+![Contoh Tampilan Program](images/tampilan-program.png)
+
 ### File: `Main.java`
 
 ```java
