@@ -10,7 +10,62 @@ Program ini digunakan untuk melakukan konversi NPM Mahasiswa yang dimasukkan ole
 - `MahasiswaEntity.java`: Kelas model untuk menyimpan informasi mahasiswa.
 - `Npm.java`: Berisi logika untuk memvalidasi dan mengonversi NPM menjadi objek `MahasiswaEntity`.
 
-## Cara Menggunakan
+---
+
+# 📥 Cara Download Program dari GitHub
+
+Ingin mendapatkan salinan dari program kami? Ikuti langkah-langkah mudah di bawah ini untuk mengunduhnya langsung dari GitHub!
+
+## Langkah-langkah Download manual
+
+### 1. Kunjungi Repositori GitHub
+1. Buka browser favorit Anda.
+2. Pergi ke halaman repositori GitHub kami di: [https://github.com/username/repository-name](https://github.com/rayyreall/konversi-npm)
+
+### 2. Download sebagai ZIP
+1. Cari tombol **Code** di bagian atas halaman repositori.
+2. Klik tombol **Code** tersebut untuk membuka menu drop-down.
+3. Pilih opsi **Download ZIP** dari menu yang muncul.
+
+   
+
+### 3. Ekstrak File ZIP
+1. Setelah file ZIP selesai diunduh, buka folder tempat file tersebut disimpan.
+2. Klik kanan pada file ZIP tersebut, lalu pilih **Extract All...** atau gunakan alat ekstraksi ZIP lainnya.
+3. Pilih lokasi untuk mengekstrak file, lalu klik **Extract**.
+
+### 4. Selesai!
+Anda sekarang memiliki salinan dari program kami di komputer Anda. Buka folder hasil ekstraksi untuk melihat kode sumber dan file terkait lainnya.
+
+
+---
+
+# 🚀 Cara Install Program Menggunakan Git
+
+Untuk menggunakan program kami, Anda perlu mengikuti langkah-langkah berikut untuk mengunduh dan menginstall menggunakan Git.
+
+## Langkah-langkah Install
+
+### 1. Buka Terminal atau Command Prompt
+1. Buka Terminal atau Command Prompt di komputer Anda.
+
+### 2. Clone Repositori
+1. Salin repositori ke komputer lokal dengan perintah berikut:
+
+   ```bash
+   git clone https://github.com/rayyreall/konversi-npm.git
+   ```
+2. Masuk ke direktori repositori yang baru saja Anda clone:
+
+   ```bash
+   cd konversi-npm
+   ```
+### 4. Selesai!
+Anda sekarang memiliki salinan dari program kami di komputer Anda. Silakan buka menggunakan text Editor Kesayangan anda!
+
+---
+
+# Cara Menggunakan
 
 1. Jalankan program.
 2. Masukkan NPM ketika diminta.
